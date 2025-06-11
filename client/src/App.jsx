@@ -1,6 +1,9 @@
 import React from "react";
 // import { Button } from "./components/ui/button";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { RouteIndex } from "./helpers/RouteName";
+import Layout from "./Layout/Layout";
+import Index from "./pages/Index";
 
 const App = () => {
   return (
@@ -8,8 +11,8 @@ const App = () => {
       App
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
-            /blog
+          <Route path={RouteIndex} element={<Layout />}>
+            <Route index element={<Index />}/>
           </Route>
         </Routes>
       </BrowserRouter>

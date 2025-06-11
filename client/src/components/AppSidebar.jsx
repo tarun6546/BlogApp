@@ -12,6 +12,7 @@ import {
 import { Link } from "react-router-dom";
 const AppSidebar = () => {
   return (
+    // Sidebar component for the application
     <Sidebar>
       <SidebarHeader />
       <SidebarContent>
